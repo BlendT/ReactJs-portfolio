@@ -1,0 +1,108 @@
+.nav-item {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: 700;
+  padding: 24px 79px 11px 119px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.nav-item-scrolled {
+  color: black;
+  background-color: white;
+  animation: scrolled 1s;
+}
+
+.nav-item span {
+  color: #ffc209;
+}
+
+.nav-item li {
+  display: inline;
+  padding-left: 15px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.navLink:hover {
+  color: rgb(37, 35, 35);
+}
+
+.navLink-active {
+  color: rgb(81, 79, 79) !important;
+}
+
+.navLink-scroll {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nav-item-mediaquery {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 24px 79px 11px 119px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 999;
+}
+@keyframes scrolled {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 927px) {
+  .nav-item {
+    display: inline-block;
+    padding: 5px 26px 0px 26px;
+  }
+  .nav-item li {
+    display: block;
+  }
+  .toggle-btn-collapse {
+    float: right;
+    margin-top: -27px;
+    margin-bottom: 17px;
+  }
+  .scroll-nav {
+    overflow: scroll;
+    width: 100%;
+    height: 151px;
+    overflow-x: hidden;
+    animation: scroll 0.3s forwards;
+  }
+  .nav-item li {
+    padding-bottom: 5px;
+  }
+  .nav-item ul {
+    padding: 0px;
+  }
+  .nav-item h2 {
+    padding-left: 15px;
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 151px;
+  }
+}

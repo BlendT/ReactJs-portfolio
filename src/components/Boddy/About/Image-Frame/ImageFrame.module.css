@@ -1,0 +1,40 @@
+.img-frame {
+  position: relative;
+  margin-top: 159px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.img-container {
+  height: fit-content;
+}
+
+.img-innerFrame {
+  background-color: white;
+  padding: 22px;
+}
+.img-innerFrame img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-content {
+  width: 50%;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 927px) {
+  .img-frame {
+    display: block;
+  }
+  .img-container {
+    width: 100%;
+  }
+  .img-content {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 52px;
+  }
+}

@@ -1,0 +1,7 @@
+.header {
+  position: relative;
+  height: 600px;
+  background-color: rgb(93, 99, 99);
+  color: #ccc;
+  background-image: url("../../../assets/pb.jpeg");
+}

@@ -1,0 +1,50 @@
+.line-container {
+  width: fit-content;
+  height: fit-content;
+}
+.line-1,
+.line-2,
+.line-3 {
+  width: 25px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: white;
+}
+
+.line-1-clicked {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  animation: toggle-transform-line1 0.3s forwards;
+}
+
+.line-3-clicked {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  animation: toggle-transform-line3 0.3s forwards;
+}
+
+.line-1-scrolled {
+  background-color: black;
+}
+.line-3-scrolled {
+  background-color: black;
+}
+@keyframes toggle-transform-line1 {
+  0% {
+    transform: rotateY(0deg) rotate(0deg);
+  }
+  100% {
+    transform: rotateY(0deg) rotate(45deg);
+  }
+}
+
+@keyframes toggle-transform-line3 {
+  0% {
+    transform: rotateY(0deg) rotate(0deg);
+  }
+  100% {
+    transform: rotateY(0deg) rotate(-45deg);
+  }
+}
